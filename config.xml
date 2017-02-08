@@ -1,2 +1,8 @@
 <UserScriptConfig>
+	<Script basedir="cleanfacebook" checkRemoteUpdates="1" dependhash="acc535b968e5767dd8efeebe990f267a42400760" description="Remove sidebars and sponsored posts" enabled="true" filename="cleanfacebook.user.js" installTime="1486528874000" modified="1486528874000" name="cleanfacebook" namespace="tag:chris.mazzullo@gmail.com,2015-07:ChrisMazzullo" noframes="false" runAt="document-end" updateMetaStatus="unknown" uuid="109ade0f-829c-4013-8ee5-b62ceaccd0cf" version="1" installurl="file:///home/chris/projects/gm-scripts/cleanfacebook/cleanfacebook.user.js" updateurl="file:///home/chris/projects/gm-scripts/cleanfacebook/cleanfacebook.user.js">
+		<Grant>none</Grant>
+		<Include>http://www.facebook.com*</Include>
+		<Include>https://www.facebook.com*</Include>
+		<Require filename="jquery.min.js"/>
+	</Script>
 </UserScriptConfig>
