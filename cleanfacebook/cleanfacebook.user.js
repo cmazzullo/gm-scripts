@@ -10,21 +10,22 @@
 // ==/UserScript==
 
 $(document).ready(function () { // get rid of unnecessary bars
-    $(rightCol).hide();
-    $(leftCol).hide();
-    $(findFriendsNav).hide();
 });
 
 function removeAds (jNode) {
+    $(rightCol).hide();
+    $(leftCol).hide();
+    $(findFriendsNav).hide();
     if (/Sponsored/i.test (jNode.text())) {
         //jNode.hide();
         jNode.empty();
-        jNode.css('background', '#eee');
-        jNode.append('<div style="text-align: center;">~clean facebook~</div>');
+        jNode.css('background', '#fff');
+        jNode.append('<div style="text-align: center; padding: 5px; color: #909492">~clean facebook~</div>');
     }
 }
 
 waitForKeyElements ('div[role="article"]', removeAds);
+
 
 // Credit: http://stackoverflow.com/a/8283815
 /*--- waitForKeyElements():  A utility function, for Greasemonkey scripts,
