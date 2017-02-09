@@ -16,7 +16,8 @@ function removeAds (jNode) {
     $(rightCol).hide();
     $(leftCol).hide();
     $(findFriendsNav).hide();
-    if (/Sponsored/i.test (jNode.text())) {
+    if ((/Sponsored/i.test (jNode.text())) ||
+        (/People You May Know/i.test (jNode.text()))) {
         //jNode.hide();
         jNode.empty();
         jNode.css('background', '#fff');
